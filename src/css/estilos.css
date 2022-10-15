@@ -1,0 +1,144 @@
+body{
+    background-image: url(../images/fundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    font-family: 'VT323', monospace;
+    color: #f3f3f3;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    Align-items: center;
+    Height: 100vh;
+    padding: 30px;
+}
+
+.cartao{
+    background-color: #0d0a1b80;
+    width: 370px;
+    border: 2px solid #e96f5a;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cartao .minhas_informacoes{
+ padding-top: 20px;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: 10px;
+}
+
+.cartao .minhas_informacoes img{
+    width: 96px;
+    height: 96px;
+    border-radius: 50px;
+    border: 4px solid #e96f5a;
+}
+
+.cartao .minhas_informacoes .nome{
+    font-size: 26px
+}
+
+.cartao .minhas_informacoes .cargo{
+    font-size: 20px;
+    color:#b8bbc5
+}
+
+.cartao .conteudo{
+    margin-top: 15px;
+}
+
+.cartao .conteudo .abas {
+    display: flex;
+}
+
+.cartao .abas .aba{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.cartao .abas img{
+    width: 30px;
+}
+
+.cartao .abas .aba.selecionado{
+    background-color: #2626268e;
+}
+
+.cartao .informacoes_abas{
+    background-color: #2626268e;
+}
+
+.cartao .abas:hover{
+  background-color:#26262600;
+}
+
+.informacoes_abas .informacao{
+    min-height: 260px;
+    padding: 15px;
+    display: none;
+}
+
+.informacoes_abas .informacao.selecionado{
+    display: block;
+}
+
+.informacoes_abas .sub_titulo{
+    font-size: 22px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.informacoes_abas .descricao{
+    font-size: 20px;
+    max-height: 160px;
+    overflow-y: auto;
+    padding-right: 15px;
+}
+
+.informacoes_abas .descricao span{
+    color:#e96f5a
+
+}
+
+.contatos{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    align-items: center;
+    max-height: 180px;
+    overflow-y: auto;
+}
+
+.contatos li a{
+    width: 250px;
+    display: block;
+    color: #f3f3f3;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    transition: opacity 0.3s ease-in-out
+}
+
+.contatos .curriculo{
+    background-color: #06c185
+}
+
+.contatos .linkedin{
+    background-color: #1d87bd
+}
+
+.contatos .github{
+    background-color: #545454
+}
+
+.contatos li a:hover{
+    opacity: 0.8;
+}
+
